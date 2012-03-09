@@ -1,7 +1,11 @@
+1.2
+---
+- Inlined CSS (samdark)
+
 1.1
 ---
-- Yandex sprites support, enabled by default (Sam Dark)
+- Yandex sprites support, enabled by default (samdark)
 
 1.0
 ---
-- Initial release (Sam Dark)
+- Initial release (samdark)

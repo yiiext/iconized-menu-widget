@@ -4,8 +4,8 @@
  *
  * Automatically adds favicons in front of menu links.
  *
- * @author Makarov Alexander
- * @version 1.1
+ * @author Alexander Makarov
+ * @version 1.2
  */
 class EIconizedMenu extends CMenu {
     public $useSprites = true;
@@ -19,10 +19,20 @@ class EIconizedMenu extends CMenu {
 		else
 			$this->htmlOptions['class']='iconized';
 
-		Yii::app()->clientScript->registerCssFile(
-			Yii::app()->assetManager->publish(
-				dirname(__FILE__).'/assets/iconizedMenu.css'
-			)
+		Yii::app()->clientScript->registerCss('iconized_menu_css',
+<<<CSS
+.iconized a {
+	padding-left: 20px;
+	background: no-repeat 0 50%;
+	height: 16px;
+
+	display:-moz-inline-stack;
+	display:inline-block;
+	_overflow:hidden;
+	*zoom:1;
+	*display:inline;
+}
+CSS
 		);
 
         if($this->useSprites){
