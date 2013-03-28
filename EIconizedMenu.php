@@ -1,11 +1,13 @@
 <?php
+Yii::import('zii.widgets.CMenu');
+
 /**
  * EIconizedMenu
  *
  * Automatically adds favicons in front of menu links.
  *
  * @author Alexander Makarov
- * @version 1.2
+ * @version 1.2.1
  */
 class EIconizedMenu extends CMenu {
     public $useSprites = true;

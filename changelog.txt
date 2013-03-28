@@ -1,3 +1,7 @@
+1.2.1
+-----
+- Added CMenu import (samdark)
+
 1.2
 ---
 - Inlined CSS (samdark)
